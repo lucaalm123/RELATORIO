@@ -65,15 +65,28 @@ function handleImageFallback(holder) {
   const img = holder.querySelector('img');
   const placeholder = holder.querySelector('.image-placeholder');
   if (!img || !placeholder) return;
-  img.addEventListener('error', () => {
+
+  const showImage = () => {
+    holder.classList.add('image-ok');
+    holder.classList.remove('image-error');
+    img.hidden = false;
+    placeholder.hidden = true;
+  };
+
+  const showPlaceholder = () => {
+    holder.classList.add('image-error');
+    holder.classList.remove('image-ok');
     img.hidden = true;
     placeholder.hidden = false;
-  });
-  if (!img.complete) return;
-  if (img.naturalWidth === 0) {
-    img.hidden = true;
-    placeholder.hidden = false;
-  }
+  };
+
+  img.addEventListener('load', showImage);
+  img.addEventListener('error', showPlaceholder);
+
+  // GitHub Pages é case-sensitive e pode atrasar o deploy.
+  // Se a imagem já estiver em cache, validamos imediatamente.
+  if (img.complete && img.naturalWidth > 0) showImage();
+  if (img.complete && img.naturalWidth === 0) showPlaceholder();
 }
 document.querySelectorAll('.image-holder').forEach(handleImageFallback);
 
