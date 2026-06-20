@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Case acadêmico de UX Research Sprint sobre retenção, adesão e percepção de valor na plataforma StudyAI." />
+  <title>StudyAI — UX Research Sprint</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#hero" aria-label="Voltar ao início">
+      <span class="brand-mark">✦</span>
+      <span>StudyAI UX</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#problema">Problema</a>
+      <a href="#interface">Interface</a>
+      <a href="#heatmap">Mapa de calor</a>
+      <a href="#afinidade">Afinidade</a>
+      <a href="#persona">Persona</a>
+      <a href="#recomendacao">Recomendação</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="hero">
+      <div class="hero-bg orb-one"></div>
+      <div class="hero-bg orb-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Projeto final · UX Research Sprint</p>
+          <h1>StudyAI — UX Research Sprint</h1>
+          <p class="hero-text">Investigação sobre retenção, adesão e percepção de valor em uma plataforma de estudos com Inteligência Artificial.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#problema">Ver diagnóstico</a>
+            <a class="btn ghost" href="#heatmap">Explorar mapa de calor</a>
+          </div>
+        </div>
+        <div class="hero-panel reveal" aria-label="Indicadores do problema">
+          <div class="metric-card emphasis">
+            <span>Cadastros</span>
+            <strong>5.000</strong>
+            <small>em 3 meses</small>
+          </div>
+          <div class="metric-card">
+            <span>Retorno</span>
+            <strong>30%</strong>
+            <small>após 1º acesso</small>
+          </div>
+          <div class="metric-card warning">
+            <span>Abandono</span>
+            <strong>60%</strong>
+            <small>na 1ª semana</small>
+          </div>
+          <div class="metric-card danger">
+            <span>Conversão</span>
+            <strong>&lt;5%</strong>
+            <small>assinatura paga</small>
+          </div>
+          <div class="floating-tags" aria-hidden="true">
+            <span>Resumos</span>
+            <span>Mapas mentais</span>
+            <span>Flashcards</span>
+            <span>Planejamento</span>
+            <span>IA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contexto">
+      <div class="container split">
+        <div class="section-copy reveal">
+          <p class="eyebrow">01 · Contexto</p>
+          <h2>Uma EdTech com muitas ferramentas, mas com baixa continuidade de uso.</h2>
+          <p>A StudyAI é uma plataforma de Inteligência Artificial voltada para estudantes, oferecendo recursos como resumos automáticos, explicação de conteúdos, criação de mapas mentais, flashcards e planejamento de estudos.</p>
+          <p>Apesar do alto volume de cadastros, os dados indicam dificuldade em manter os usuários ativos e converter o interesse inicial em uso contínuo.</p>
+        </div>
+        <div class="feature-grid reveal">
+          <article class="mini-card"><span>📝</span><strong>Resumos automáticos</strong></article>
+          <article class="mini-card"><span>💬</span><strong>Explicação de conteúdos</strong></article>
+          <article class="mini-card"><span>🧠</span><strong>Mapas mentais</strong></article>
+          <article class="mini-card"><span>🃏</span><strong>Flashcards</strong></article>
+          <article class="mini-card"><span>📅</span><strong>Planejamento de estudos</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="problema">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">02 · Problema central</p>
+          <h2>Retenção e adesão estão abaixo do potencial da plataforma.</h2>
+          <p>A StudyAI apresenta um problema de retenção e adesão. Apesar de ter alcançado cerca de 5 mil cadastros nos três primeiros meses, apenas 30% dos usuários retornam à plataforma, enquanto 60% abandonam a experiência ainda na primeira semana. Além disso, a taxa de assinatura paga é inferior a 5%.</p>
+        </div>
+        <div class="diagnosis-strip reveal">
+          <strong>Diagnóstico síntese</strong>
+          <p>A plataforma atrai usuários para o cadastro, mas não consegue convertê-los em usuários ativos.</p>
+        </div>
+        <div class="two-cards reveal">
+          <article class="problem-card">
+            <span class="icon">↩</span>
+            <h3>Problema de retenção</h3>
+            <p>O usuário até entra na plataforma, mas não cria hábito nem retorna com frequência após a primeira experiência.</p>
+          </article>
+          <article class="problem-card">
+            <span class="icon">⬆</span>
+            <h3>Problema de adesão</h3>
+            <p>A percepção de valor não é forte o suficiente para sustentar o uso contínuo ou justificar o plano premium.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="interface">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">03 · Evidência visual</p>
+          <h2>A interface como evidência do diagnóstico de UX.</h2>
+          <p>O painel inicial foi analisado como evidência visual para entender onde a experiência pode gerar clareza, valor ou fricção.</p>
+        </div>
+        <div class="visual-evidence reveal">
+          <figure class="screen-frame image-holder">
+            <img src="assets/studyai-interface.png" alt="Painel inicial da plataforma StudyAI" />
+            <figcaption>Painel inicial da StudyAI utilizado como evidência visual para análise heurística e diagnóstico de retenção.</figcaption>
+            <div class="image-placeholder" hidden>Insira aqui a imagem da interface da StudyAI</div>
+          </figure>
+          <div class="callout-grid">
+            <article><span>01</span>Menu lateral com muitas funcionalidades</article>
+            <article><span>02</span>Banner principal com CTA de início</article>
+            <article><span>03</span>Cards de continuidade de estudo</article>
+            <article><span>04</span>Ferramentas populares</article>
+            <article><span>05</span>Plano gratuito e CTA premium</article>
+            <article><span>06</span>Recomendações personalizadas</article>
+            <article><span>07</span>Próximas revisões</article>
+            <article><span>08</span>Dica do dia</article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="heatmap">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">04 · Mapa de calor</p>
+          <h2>O menu lateral concentra carga cognitiva e pontos de decisão.</h2>
+          <p>A sobreposição abaixo destaca as áreas mais críticas da tela. O foco principal está no menu lateral, onde muitas ferramentas aparecem isoladas e sem agrupamento por objetivo de estudo.</p>
+        </div>
+        <div class="heatmap-toolbar reveal">
+          <button class="pill active" data-heat="off">Ver imagem original</button>
+          <button class="pill" data-heat="on">Ver mapa de calor</button>
+        </div>
+        <div class="heatmap-layout reveal">
+          <figure class="screen-frame heatmap-frame image-holder" id="heatmapFrame">
+            <img src="assets/studyai-interface.png" alt="Painel StudyAI com mapa de calor" />
+            <div class="image-placeholder" hidden>Insira aqui a imagem da interface da StudyAI</div>
+            <div class="heat-layer" aria-hidden="true">
+              <span class="heatspot menu-critical"></span>
+              <span class="heatspot menu-items"></span>
+              <span class="heatspot hero-cta"></span>
+              <span class="heatspot continuity"></span>
+              <span class="heatspot premium-box"></span>
+              <span class="heatspot recommendation"></span>
+              <span class="heatspot revisions"></span>
+            </div>
+          </figure>
+          <aside class="legend-card">
+            <h3>Legenda do mapa</h3>
+            <p><span class="dot red"></span>Vermelho: sobrecarga e fricção</p>
+            <p><span class="dot orange"></span>Laranja: decisão de continuidade</p>
+            <p><span class="dot yellow"></span>Amarelo: atenção moderada</p>
+            <p><span class="dot blue"></span>Azul: baixa prioridade visual</p>
+            <div class="insight-box small">
+              <strong>Conclusão visual</strong>
+              <p>O mapa de calor sugere que o menu lateral concentra grande parte da carga cognitiva da interface. Apesar de reunir funcionalidades importantes, ele não orienta claramente o usuário sobre qual caminho seguir.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu-critico">
+      <div class="container split reverse">
+        <div class="section-copy reveal">
+          <p class="eyebrow">05 · Foco crítico</p>
+          <h2>O menu lateral apresenta variedade funcional, mas não transforma essa variedade em uma jornada clara de estudo.</h2>
+          <p>O menu reúne Início, Chat IA, Resumos, Mapas Mentais, Flashcards, Explicações, Exercícios, Planejamento, Histórico e Favoritos. A quantidade de opções pode parecer positiva, mas para usuários novos ela aumenta a dúvida sobre qual ação iniciar.</p>
+          <p>Essa ausência de hierarquia impacta retenção, engajamento, frequência de uso, percepção de valor e conversão premium, porque o usuário explora funções soltas em vez de seguir uma jornada orientada.</p>
+        </div>
+        <div class="analysis-card reveal">
+          <h3>Riscos do menu atual</h3>
+          <ul class="check-list negative">
+            <li>Excesso de opções sem hierarquia clara</li>
+            <li>Ferramentas isoladas, sem conexão entre si</li>
+            <li>Ausência de agrupamento por objetivo de estudo</li>
+            <li>Dificuldade em entender qual ferramenta usar primeiro</li>
+            <li>Pouca diferenciação entre criar, revisar, praticar e planejar</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="diagnostico">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">06 · Diagnóstico de UX</p>
+          <h2>O painel é visualmente promissor, mas ainda não orienta uma jornada clara.</h2>
+        </div>
+        <div class="pros-cons reveal">
+          <article class="panel success">
+            <h3>Pontos positivos</h3>
+            <ul>
+              <li>Interface visualmente limpa</li>
+              <li>Várias ferramentas de estudo</li>
+              <li>Continuidade de atividades</li>
+              <li>Cards de progresso</li>
+              <li>Incentivo ao uso diário</li>
+              <li>Elementos de gamificação</li>
+              <li>CTA para premium</li>
+              <li>Recomendações personalizadas</li>
+            </ul>
+          </article>
+          <article class="panel critical">
+            <h3>Pontos críticos</h3>
+            <ul>
+              <li>Menu extenso e pouco orientado</li>
+              <li>Plano gratuito com limitação pouco contextualizada</li>
+              <li>CTA premium antes da percepção de valor</li>
+              <li>Pouca conexão entre ferramentas</li>
+              <li>Ausência de trilha clara de estudo</li>
+              <li>Risco de uso solto e abandono</li>
+              <li>Falta de agrupamento por jornada</li>
+              <li>Baixa orientação para iniciantes</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="causas">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">07 · Causas possíveis</p>
+          <h2>O abandono pode surgir da soma entre fricção, baixa orientação e valor pouco percebido.</h2>
+        </div>
+        <div class="cause-grid reveal">
+          <article>A ferramenta falha em engajar após o cadastro.</article>
+          <article>O plano gratuito limita o uso e reduz a exploração.</article>
+          <article>A plataforma não conduz o usuário para a próxima ação.</article>
+          <article>As ferramentas não se conectam por tópico de estudo.</article>
+          <article>O usuário não usa todas as ferramentas em um único fluxo.</article>
+          <article>Funcionalidades bloqueadas reduzem motivação.</article>
+          <article>As respostas da IA parecem genéricas ou superficiais.</article>
+          <article>O usuário precisa fazer várias tentativas.</article>
+          <article>A falta de profundidade reduz confiança.</article>
+          <article>A ausência de personalização dificulta respostas específicas.</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="hipoteses">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">08 · Hipóteses</p>
+          <h2>Hipóteses de retenção e adesão.</h2>
+        </div>
+        <div class="hypothesis-grid reveal">
+          <article><span>H1</span><h3>Barreira do plano gratuito</h3><p>Os recursos disponíveis na modalidade gratuita limitam a exploração e impedem que o usuário compreenda o valor antes de assinar.</p></article>
+          <article><span>H2</span><h3>Ferramentas isoladas</h3><p>As ferramentas não se conectam por tema de estudo, fragmentando a jornada e gerando frustração.</p></article>
+          <article><span>H3</span><h3>Respostas superficiais</h3><p>As respostas da IA parecem genéricas, reduzindo a segurança do usuário para continuar.</p></article>
+          <article><span>H4</span><h3>Menu sem orientação</h3><p>O usuário abandona porque não entende qual ferramenta usar primeiro.</p></article>
+          <article><span>H5</span><h3>Premium antes do valor</h3><p>O CTA premium aparece antes de a plataforma demonstrar valor suficiente.</p></article>
+          <article><span>H6</span><h3>Baixa percepção de progresso</h3><p>O usuário não percebe evolução real ao longo da semana, reduzindo o hábito de retorno.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="dados">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">09 · Dados e estatística</p>
+          <h2>Os dados mostram utilidade moderada e necessidade de refinamento.</h2>
+        </div>
+        <div class="data-grid reveal">
+          <article class="data-panel wide">
+            <h3>Respostas atendem às expectativas?</h3>
+            <div class="bar-list">
+              <div><span>Sempre</span><strong>12%</strong><i style="--w:12%"></i></div>
+              <div><span>Frequentemente</span><strong>26%</strong><i style="--w:26%"></i></div>
+              <div><span>Às vezes</span><strong>48%</strong><i style="--w:48%"></i></div>
+              <div><span>Raramente</span><strong>14%</strong><i style="--w:14%"></i></div>
+            </div>
+          </article>
+          <article class="data-panel">
+            <h3>Profundidade percebida</h3>
+            <p class="values">4, 5, 6, 5, 7, 4, 6, 5, 5, 4</p>
+            <div class="stat-row"><span>Moda</span><strong>5</strong></div>
+            <div class="stat-row"><span>Média</span><strong>5,1</strong></div>
+            <div class="stat-row"><span>Mediana</span><strong>5</strong></div>
+          </article>
+          <article class="data-panel">
+            <h3>Quantidade de refinamentos</h3>
+            <p class="values">0, 2, 3, 1, 4, 2, 3, 1, 2, 3</p>
+            <div class="stat-row"><span>Moda</span><strong>2 e 3</strong></div>
+            <div class="stat-row"><span>Média</span><strong>2,1</strong></div>
+            <div class="stat-row"><span>Mediana</span><strong>2</strong></div>
+          </article>
+        </div>
+        <div class="diagnosis-strip reveal">
+          <strong>Interpretação</strong>
+          <p>A média de profundidade em 5,1 mostra avaliação intermediária. A média de 2,1 refinamentos indica que os usuários precisam insistir para obter respostas mais úteis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="afinidade">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">10 · Mapa de afinidade</p>
+          <h2>10 insights organizados por padrões de comportamento e fricção.</h2>
+        </div>
+        <div class="affinity-board reveal">
+          <article><span>1</span><h3>Falta de profundidade gera desconfiança</h3><p>68% avaliam entre “às vezes” e “raramente” que a IA não oferece profundidade suficiente.</p><strong>Quando a IA não aprofunda, o usuário perde confiança.</strong></article>
+          <article><span>2</span><h3>Repetição leva ao abandono</h3><p>Usuários precisam perguntar mais de 2 vezes e depois tendem a abandonar.</p><strong>Múltiplas tentativas aumentam a frustração.</strong></article>
+          <article><span>3</span><h3>Pedidos sem orientação</h3><p>O usuário precisa refazer perguntas para obter algo mais útil.</p><strong>A plataforma não orienta bons pedidos.</strong></article>
+          <article><span>4</span><h3>Resposta útil exige esforço</h3><p>É necessário pedir detalhes várias vezes.</p><strong>Obter utilidade exige esforço adicional.</strong></article>
+          <article><span>5</span><h3>Melhor em temas gerais</h3><p>Em assuntos específicos, há falta de profundidade.</p><strong>A IA perde qualidade sem contexto.</strong></article>
+          <article><span>6</span><h3>Plano gratuito limita exploração</h3><p>A modalidade gratuita limita recursos e uso das funcionalidades.</p><strong>Barreiras dificultam a descoberta de valor.</strong></article>
+          <article><span>7</span><h3>Ferramentas fragmentadas</h3><p>As ferramentas não se conectam por tema de estudo.</p><strong>A falta de integração gera fricção.</strong></article>
+          <article><span>8</span><h3>Valor irregular</h3><p>Somente 12% dizem que sempre atende; 48% dizem que só às vezes.</p><strong>A proposta de valor não é consistente.</strong></article>
+          <article><span>9</span><h3>Falta personalização</h3><p>Temas complexos exigem respostas mais contextualizadas.</p><strong>A resposta não se adapta ao estudante.</strong></article>
+          <article><span>10</span><h3>Velocidade não basta</h3><p>A IA responde rápido, mas a satisfação cai quando falta profundidade.</p><strong>Rapidez não sustenta retenção sozinha.</strong></article>
+        </div>
+        <div class="synthesis reveal">
+          <strong>Síntese do mapa</strong>
+          <p>O principal problema não é falta de interesse na IA, mas a dificuldade de obter respostas profundas, confiáveis e úteis nas primeiras interações. A experiência exige refinamento, esforço extra e pouca orientação, reduzindo confiança e aumentando abandono.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="persona">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">11 · Persona</p>
+          <h2>Michelle Barbosa representa o usuário que precisa de confiança, profundidade e organização.</h2>
+        </div>
+        <div class="persona-card reveal">
+          <div class="persona-profile">
+            <div class="avatar">MB</div>
+            <h3>Michelle Barbosa</h3>
+            <p>23 anos · Estudante de Arquitetura e Urbanismo</p>
+            <blockquote>“Estou cansada, tenho uma rotina difícil e preciso entregar um seminário bem feito, porque priorizo a qualidade dos meus trabalhos.”</blockquote>
+          </div>
+          <div class="persona-details">
+            <section><h4>Perfil</h4><p>Michelle divide seu tempo entre faculdade, estágio, trabalhos acadêmicos e seminários. Busca ferramentas digitais que ajudem a organizar estudos, economizar tempo e entregar trabalhos com qualidade.</p></section>
+            <section><h4>Objetivos</h4><ul><li>Estudar com organização e profundidade</li><li>Produzir trabalhos bem estruturados</li><li>Obter respostas confiáveis e detalhadas</li></ul></section>
+            <section><h4>Dores</h4><ul><li>Recebe respostas genéricas</li><li>Perde tempo refinando perguntas</li><li>Sente falta de fontes confiáveis</li><li>Tem receio de não aprender com profundidade</li></ul></section>
+            <section><h4>Necessidades</h4><ul><li>Linguagem clara</li><li>Fontes confiáveis e referenciáveis</li><li>Personalização por área</li><li>Integração entre resumo, mapa mental, flashcards e planejamento</li></ul></section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="menu-proposta">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">12 · Proposta de menu</p>
+          <h2>Transformar ferramentas isoladas em ações claras.</h2>
+        </div>
+        <div class="menu-models reveal">
+          <article class="model-card">
+            <h3>Modelo 1 · Por categoria de uso</h3>
+            <div class="model-list"><strong>Estudar com IA</strong><span>Chat IA · Explicações · Resumos</span></div>
+            <div class="model-list"><strong>Organizar conteúdo</strong><span>Mapas Mentais · Planejamento · Favoritos</span></div>
+            <div class="model-list"><strong>Praticar e revisar</strong><span>Flashcards · Exercícios · Próximas Revisões</span></div>
+            <div class="model-list"><strong>Acompanhar evolução</strong><span>Histórico · Progresso · Plano de estudo</span></div>
+          </article>
+          <article class="model-card featured">
+            <h3>Modelo 2 · Por objetivo do usuário</h3>
+            <ul class="objective-list">
+              <li>Quero entender um conteúdo</li>
+              <li>Quero resumir um material</li>
+              <li>Quero memorizar</li>
+              <li>Quero praticar questões</li>
+              <li>Quero revisar</li>
+              <li>Quero montar um plano de estudos</li>
+            </ul>
+            <p>Este modelo tende a ser melhor para iniciantes porque reduz carga cognitiva: em vez de escolher uma ferramenta, o usuário escolhe o objetivo que deseja alcançar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="jornada">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">13 · Jornada ideal</p>
+          <h2>Uma trilha de estudo contínua aumenta percepção de valor.</h2>
+        </div>
+        <div class="journey reveal">
+          <div><span>1</span>Escolhe tema ou envia material</div>
+          <div><span>2</span>Gera resumo</div>
+          <div><span>3</span>Sugere mapa mental</div>
+          <div><span>4</span>Cria flashcards</div>
+          <div><span>5</span>Propõe exercícios</div>
+          <div><span>6</span>Agenda revisão</div>
+          <div><span>7</span>Acompanha progresso</div>
+          <div><span>8</span>Premium amplia a jornada</div>
+        </div>
+        <div class="diagnosis-strip reveal">
+          <strong>Como isso resolve o problema?</strong>
+          <p>O usuário deixa de explorar funções soltas e passa a seguir uma sequência lógica de aprendizagem, aumentando clareza, continuidade e percepção de valor.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="oportunidades">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">14 · Oportunidades</p>
+          <h2>Melhorias práticas para aumentar retenção.</h2>
+        </div>
+        <div class="opportunity-grid reveal">
+          <article><h3>Filtros de personalização</h3><p>Escolher profundidade, linguagem, área e objetivo.</p></article>
+          <article><h3>Modo de resposta</h3><p>Resumo rápido, detalhada, exemplos, prova, seminário e referências.</p></article>
+          <article><h3>Integração por tema</h3><p>Conectar resumo, mapa mental, flashcards e planejamento.</p></article>
+          <article><h3>Onboarding guiado</h3><p>Ensinar bons pedidos e mostrar exemplos práticos.</p></article>
+          <article><h3>Prévia de valor</h3><p>Permitir experimentar melhor antes do bloqueio.</p></article>
+          <article><h3>Minha trilha de estudo</h3><p>Centralizar progresso, próximas ações e revisões.</p></article>
+          <article><h3>Premium como continuidade</h3><p>Apresentar o plano pago como ampliação natural da jornada.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="abtest">
+      <div class="container split">
+        <div class="section-copy reveal">
+          <p class="eyebrow">15 · Teste A/B</p>
+          <h2>Testar menu por objetivo e filtros de resposta antes da IA responder.</h2>
+          <p><strong>Versão A:</strong> tela atual, onde o usuário escolhe livremente uma ferramenta no menu e digita sua pergunta sem orientação.</p>
+          <p><strong>Versão B:</strong> menu reorganizado por objetivo de estudo e filtros antes da resposta: profundidade, área de estudo, linguagem, formato e objetivo.</p>
+        </div>
+        <div class="analysis-card reveal">
+          <h3>Métricas de sucesso</h3>
+          <ul class="check-list">
+            <li>Redução da quantidade de refinamentos</li>
+            <li>Aumento da satisfação com a resposta</li>
+            <li>Aumento da taxa de retorno</li>
+            <li>Redução do abandono após a primeira semana</li>
+            <li>Aumento de cliques em ações de continuidade</li>
+            <li>Aumento da conversão premium após uso real</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final" id="recomendacao">
+      <div class="container">
+        <div class="recommendation reveal">
+          <p class="eyebrow">16 · Recomendação para a diretoria</p>
+          <h2>A StudyAI deve priorizar profundidade, confiança, orientação e personalização.</h2>
+          <p>A plataforma precisa reduzir o esforço necessário para obter respostas úteis, orientar melhor o usuário na formulação dos pedidos, reorganizar o menu lateral por objetivos de estudo e integrar as ferramentas dentro de uma jornada contínua.</p>
+          <blockquote>“Retenção não depende apenas de ter muitas funcionalidades, mas de entregar valor claro, confiável e útil nas primeiras interações.”</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="conclusao">
+      <div class="container narrow reveal">
+        <p class="eyebrow">17 · Conclusão</p>
+        <h2>Transformar a primeira interação em valor claro.</h2>
+        <p>A pesquisa mostra que os usuários têm interesse inicial pela StudyAI, mas abandonam a plataforma quando a experiência não entrega profundidade, confiança e orientação suficientes. O mapa de calor evidencia que o menu lateral concentra grande parte da carga cognitiva da interface, pois reúne muitas funcionalidades sem transformá-las em uma jornada clara de estudo.</p>
+        <p>Para aumentar a retenção, a StudyAI precisa reduzir esforço, aumentar personalização e conectar melhor as ferramentas de estudo.</p>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-top" aria-label="Voltar ao topo">↑</button>
+
+  <footer class="footer">
+    <div class="container">
+      <p>StudyAI — UX Research Sprint · Case acadêmico</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
